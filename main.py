@@ -1,6 +1,8 @@
 import os,shutil
 
-#The code is used to find any files like '.txt','.jpg',and print these files			
+#The code is used to find any files like '.txt','.jpg',and print these files	
+
+
 
 def findFile(yourpath):   #input a origin path
 	try:
@@ -21,7 +23,7 @@ def findFile(yourpath):   #input a origin path
 		if d != -1:
 			truepath = yourpath+"\\"+i
 			try:
-				shutil.copy(truepath,'D:\\test1')
+				shutil.move(truepath,'D:\\test\\test1')      #the destination path
 			
 			except:
 				print('error!')
@@ -40,7 +42,7 @@ def findFile(yourpath):   #input a origin path
 			
 
 			
-path ='D:\\'
+path ='E:\\迅雷下载'     #the target main path
 
 
 
